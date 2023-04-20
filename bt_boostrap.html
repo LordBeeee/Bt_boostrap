@@ -1,0 +1,333 @@
+<html>
+
+<head>
+
+    <title>BaiTap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 1800px;
+            width: 1440px;
+        }
+        
+        #Menu {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 50px;
+        }
+        
+        #left_menu {
+            display: flex;
+            justify-content: space-around;
+            width: 250px;
+            margin-left: 145px;
+            margin-top: 25px;
+            margin-right: 275px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #C2C4CA;
+        }
+        
+        #logo {
+            display: flex;
+            justify-content: space-around;
+            width: 240px;
+            height: 50px;
+            margin-top: 10px;
+            margin-right: 190px;
+        }
+        
+        #right_menu {
+            display: flex;
+            width: 30%;
+            height: 35px;
+            margin-top: 10px;
+        }
+        
+        #Text {
+            display: flex;
+            justify-content: center;
+            margin-top: 90px;
+        }
+        
+        #Title1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            border: 2px;
+            border-style: solid;
+            border-radius: 10px;
+            width: 1175px;
+            margin-left: 132px;
+            border-color: #C2C4CA;
+        }
+        
+        #Title_left1 {
+            display: flex;
+            width: 560px;
+            height: 300px;
+        }
+        
+        #Title_right1 {
+            display: flex;
+            width: 615px;
+            height: 300px;
+            flex-direction: column;
+            margin-left: 70px;
+        }
+        
+        #Title_right1 .btn-success {
+            width: 200px;
+            height: 50px;
+            background-color: #459D7A;
+            color: whitesmoke;
+            border-radius: 5px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        
+        #right_menu input {
+            width: 200px;
+            border-radius: 5px;
+            border-color: #E6E6E6;
+        }
+        
+        #Title_left2 .btn-success {
+            width: 200px;
+            height: 50px;
+            background-color: #459D7A;
+            color: whitesmoke;
+            border-radius: 5px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        
+        #You .btn-success {
+            width: 200px;
+            height: 50px;
+            background-color: #459D7A;
+            color: whitesmoke;
+            border: 0px;
+            border-radius: 5px;
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        
+        #Title2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            border: 2px;
+            border-style: solid;
+            border-radius: 10px;
+            width: 1175px;
+            margin-left: 132px;
+            border-color: #C2C4CA;
+        }
+        
+        #Title_left2 {
+            display: flex;
+            width: 615px;
+            height: 290px;
+            flex-direction: column;
+            margin-left: 70px;
+        }
+        
+        #Title_right2 {
+            display: flex;
+            width: 560px;
+            height: 290px;
+        }
+        
+        #You {
+            display: flex;
+            height: 365px;
+            border: 2px;
+            margin-top: 50px;
+            border-color: #C2C4CA;
+            border-style: solid;
+            width: 1175px;
+            margin-left: 132px;
+            border-radius: 10px;
+            justify-content: right;
+        }
+        
+        #You_left {
+            display: flex;
+            position: relative;
+            width: 1175px;
+            height: 365px;
+        }
+        
+        #You_right {
+            position: absolute;
+            justify-content: center;
+        }
+        
+        #End {
+            display: flex;
+            height: 430px;
+            margin-top: 65px;
+            background-color: #1D2128;
+            width: 100%;
+            color: #C2C4CA;
+        }
+        
+        #About {
+            margin-left: 130px;
+            margin-top: 100px;
+        }
+        
+        #Help {
+            margin-left: 115px;
+            margin-top: 100px;
+        }
+        
+        #Contact {
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+        
+        #Receive {
+            margin-left: 270px;
+            margin-top: 100px;
+        }
+        
+        #Email {
+            width: 440px;
+            height: 50px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        #Email .btn-success {
+            width: 130px;
+            height: 50px;
+            margin-top: 0px;
+            padding: 0;
+            background-color: #459D7A;
+            color: whitesmoke;
+            font-size: 20px;
+            position: absolute;
+            border-color: #459D7A;
+            border: 2px;
+            border-radius: 0px 7px 7px 0px;
+        }
+        
+        #Email input {
+            width: 300px;
+            height: 50px;
+            margin: 0;
+            position: relative;
+            border: 2px;
+            border-radius: 7px 0px 0px 7px;
+            background-color: #1D2128;
+            border-color: BFC2C8;
+            border-style: solid none solid solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="Menu">
+            <div id="left_menu">
+                <div>Shop</div>
+                <div>Offers</div>
+                <div>Our story</div>
+                <div>Blog</div>
+            </div>
+            <div id="logo">
+                <img src="/0_Event promotions/Image 1.png" alt="">
+            </div>
+            <div id="right_menu">
+                <input type="text" placeholder="Search product">
+                <img src="/0_Event promotions/Button 1.png" alt="">
+                <img src="/0_Event promotions/Avatar 1.png" alt="">
+            </div>
+        </div>
+        <div id="Text">
+            <h1 style="font-size: 55px; height: 40px;font-family: Arial, Helvetica, sans-serif;margin: 0;margin-left: 50px; color: #323842;">Promotions</h1>
+        </div>
+        <div id="Title1">
+            <div id="Title_left1">
+                <img src="/0_Event promotions/Image 1 (1).png" alt="">
+            </div>
+            <div id="Title_right1">
+                <h1 style="font-size: 35px; width: 250px;font-family: Arial, Helvetica, sans-serif; margin-top: 25px;margin-bottom: 0; color: #323842;">Promotion title</h1>
+                <p style="font-size: 20px; width:475px;height: 75px;font-family: Arial, Helvetica, sans-serif; line-height: 1.6;margin-top: 10px;margin-bottom: 0; color:#A6A9AD;">Et ipsum irure amet cupidatat mollit exercitation consequat duis aliquip. Reprehenderit Lorem veniam pariatur esse pariatur in aute tempor au</p>
+                <p style="font-size: 17px;width: 390px; ;font-family: Arial, Helvetica, sans-serif; margin-bottom: 0; margin-top: 30px; font-style: italic;color:  #C2C4CA;">*Velit deserunt elit proident velit anim adipisicing</p>
+                <button type="button" class="btn btn-success">Shop now</button>
+            </div>
+        </div>
+        <div id="Title2">
+            <div id="Title_left2">
+                <h1 style="font-size: 35px; width: 250px;font-family: Arial, Helvetica, sans-serif; margin-top: 25px;margin-bottom: 0; color: #323842;">Promotion title</h1>
+                <p style="font-size: 20px; width:475px;height: 75px;font-family: Arial, Helvetica, sans-serif; line-height: 1.6;margin-top: 0px;margin-bottom: 0; color:#A6A9AD;">Et ipsum irure amet cupidatat mollit exercitation consequat duis aliquip. Reprehenderit Lorem veniam pariatur esse pariatur in aute tempor au</p>
+                <p style="font-size: 17px;width: 390px; ;font-family: Arial, Helvetica, sans-serif; margin-bottom: 0; margin-top: 30px; font-style: italic;color:  #C2C4CA;">*Velit deserunt elit proident velit anim adipisicing</p>
+                <button type="button" class="btn btn-success">Shop now</button>
+            </div>
+            <div id="Title_right2">
+                <img src="/0_Event promotions/Image 1 (2).png" alt="">
+            </div>
+        </div>
+        <div id="You">
+            <div id="You_left">
+                <img src="/0_Event promotions/Image 1 (3).png" alt="" width="100%">
+            </div>
+            <div id="You_right">
+                <h1 style="font-size: 50px; width: 435px;height: 40px; font-family: Arial, Helvetica, sans-serif; margin-top: 100px;  margin-bottom: 0;margin-right: 100px; color: #323842;">Gift for your skin</h1>
+                <p style="font-size: 20px; width:460px;height: 75px;font-family: Arial, Helvetica, sans-serif; line-height: 1.6;margin-top: 25px;margin-bottom: 0;margin-right:60px; color:#A6A9AD;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quos quae cum aspernatur iure.</p>
+                <button type="button" class="btn btn-success">Shop now</button>
+            </div>
+        </div>
+        <div id="End">
+            <div id="About">
+                <div style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;height: 15px; ">About</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Home</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Shop</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Our story</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Blog</div>
+                <div style="background-color: #1D2128 ; border: 2px; border-style: solid;border-color: #E6E6E6;width: 130;height: 35px;border-radius: 5px;margin-top: 25px;"><datalist id=""><option value="English"></option></datalist></div>
+            </div>
+            <div id="Help">
+                <div style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;height: 15px; ">Help</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Shipping & Returns</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Track Oder</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">FAQs</div>
+            </div>
+            <div id="Contact">
+                <div style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;height: 15px; ">Contact</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Phone:</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">(+1) 123 456 7893</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">Email:</div>
+                <div style="font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;margin-top: 30px;">name@email.com</div>
+            </div>
+            <div id="Receive">
+                <div style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;height: 15px; ">Receive new promotions</div>
+                <div style="margin-top: 25px;font-size: 14px; height: 10px; font-family: Arial, Helvetica, sans-serif;height: 15px;">Duis ea tempor commodo amet reprehende </div>
+                <div id="Email">
+                    <input type="email" placeholder="Input your email" style="width: 300px;height: 50px;">
+                    <button type="button" class="btn btn-success">Subscribe</button>
+                </div>
+                <div style="margin-top: 35px;">
+                    <img src="/0_Event promotions/Twitter 1.png" alt="" style="margin-right: 5px;">
+                    <img src="/0_Event promotions/Facebook 1.png" alt="" style="margin-right: 5px;">
+                    <img src="/0_Event promotions/LinkedIn 1.png" alt="" style="margin-right: 5px;">
+                    <img src="/0_Event promotions/YouTube 1.png" alt="">
+                </div>
+                <div style="margin-top: 35px;margin-left: 45px;">@ 2022 Brand,Inc. * Privacy * Terms * Sitemap</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
